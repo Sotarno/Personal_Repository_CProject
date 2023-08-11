@@ -13,7 +13,7 @@ void Output(double);
 
 int main()
 {
-    int Light_Year;
+    double Light_Year;
     Input();
     cin >> Light_Year;
     Output(Light_Year);

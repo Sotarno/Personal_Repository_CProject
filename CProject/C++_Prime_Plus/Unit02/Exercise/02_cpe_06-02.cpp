@@ -11,13 +11,13 @@
 
 #include <iostream>
 using namespace std;
-void Input(string s, int *);
+void Input(string s, double *);
 double cal(double);
 
 int main()
 {
-    int Light_Year;
-    int * ptr = &Light_Year;                        //定义一个整数指针，并把光年的地址给指针
+    double Light_Year;
+    double * ptr = &Light_Year;                        //定义一个整数指针，并把光年的地址给指针
     Input("Enter the number of light years:", ptr); //把指针传入函数中
     cout << Light_Year
          << " light years = "
@@ -26,10 +26,10 @@ int main()
     return 0;
 }
 
-void Input(string s,int* n)                         //输入一句话+一个变量，把话打印，读取一个值给变量
+void Input(string s,double* n)                         //输入一句话+一个变量，把话打印，读取一个值给变量
 {
     cout << s;
-    int tmp = 0;
+    double tmp = 0;
     cin >> tmp;
     *n = tmp;                                       //修改指针的值
 }
