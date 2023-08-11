@@ -6,7 +6,6 @@ double Trans_long(double n);
 int main()
 {
     using namespace std;
-
     double length;
     cout << "How long is it?" << endl;
     cin >> length;
