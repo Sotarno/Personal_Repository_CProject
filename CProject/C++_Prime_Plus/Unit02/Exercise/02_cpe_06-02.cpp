@@ -18,7 +18,7 @@ int main()
 {
     double Light_Year;
     double * ptr = &Light_Year;                        //定义一个整数指针，并把光年的地址给指针
-    Input("Enter the number of light years:", ptr); //把指针传入函数中
+    Input("Enter the number of light years:", ptr);    //把指针传入函数中
     cout << Light_Year
          << " light years = "
          << cal(Light_Year)
