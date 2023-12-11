@@ -8,11 +8,10 @@
 // Age: 22
 
 #include <iostream>
-#include <string>
-using namespace std;
 
 int main()
 {
+    using namespace std;
     int age;
     char alpha;
     char firstname[20];
