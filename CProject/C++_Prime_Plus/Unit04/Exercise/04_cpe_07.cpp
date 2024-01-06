@@ -16,6 +16,19 @@ struct inflatable
 int main()
 {
     using namespace std;
-    inflatable Pizza[100];
+    // inflatable Pizza[100]; 
+    //题目没说多少个Pizza，我们暂定只有3个
+    inflatable Piz[3];
+    cout << "Please input the NO.1 company name:" << endl;
+    cin.getline(Piz[0].company,80);//读取结构中第一个的公司名字
+    cout << "Please input diameter of NO.1 :" << endl;
+    cin >> Piz[0].diameter;
+    cout << "Please input the weight of NO.1 :" << endl;
+    cin >> Piz[0].weight;
+    // ... 以此类推 写三个
+    // ... 再对他们依次进行输出
+    cout << Piz[0].company;
+    cout << Piz[1].diameter;
+    // ... 就不一一举例了
     return 0;
 };
