@@ -17,14 +17,11 @@ int main()
 
     std::cout << "Enter words (to stop, type the word done): " 
               << std::endl;
-    while (std::strcmp(word, "done") == 0)
+    std::cin >> word;
+    while (std::strcmp(word, "done"))
     {
-        while (std::cin.get() != EOF)           // test for EOF
-        {
-            std::cin.getline(word,20);          // attempt to read another char
-            std::cin.get();
-        }
-        count++;                                // echo character
+        count++;
+        std::cin >> word;
     }
     std::cout << "You entered a total of " << count << " words.";
     return 0;
