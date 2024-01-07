@@ -3,10 +3,10 @@
 // 有整数的和为44。
 
 #include <iostream>
-using namespace std;
 
 int main()
 {
+    using namespace std;
     int num1;
     int num2;
     int result;
