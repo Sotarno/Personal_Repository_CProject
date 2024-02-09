@@ -6,7 +6,7 @@ int main()
 {
     using namespace std;
     double total, choices;
-    cout << "Enter the total number of choices con the game card and\n"
+    cout << "Enter the total number of choices on the game card and\n"
             "the number of picks allowed:\n";
     while ((cin >> total >> choices) && choices <= total)
     {

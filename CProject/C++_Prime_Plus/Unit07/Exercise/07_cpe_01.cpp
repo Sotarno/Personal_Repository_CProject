@@ -8,20 +8,17 @@ double Rec_Ave(double a, double b);
 
 int main()
 {
-    double num1;
-    double num2;
-    do
+    double num1 = 1;
+    double num2 = 1;
+    while (num1 != 0 and num2 != 0)
     {
-        std::cout << "Please enter the first number: ";
+        std::cout << "Please enter the num1(Enter zero to stop.): ";
         std::cin >> num1;
-        std::cout << "Please enter the second number: ";
+        std::cout << "Please enter the num2(Enter zero to stop.): ";
         std::cin >> num2;
-        double ra;
-        ra = Rec_Ave(num1,num2);
-        std::cout << "The reconcile average of " << num1
-                  << " and " << num2 << " is " << ra << "."
-                  << "\nLet`s continue(zero to stop)!\n";
-    } while (num1 != 0 || num2 !=0);
+        std::cout << "The rec_ave of two num is " << Rec_Ave(num1,num2) << std::endl;
+    }
+    std::cout << "Stopped.";
     return 0;
 }
 
